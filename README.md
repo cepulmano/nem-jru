@@ -7,7 +7,7 @@ https://nemproject.github.io/
 
 https://github.com/QuantumMechanics/NEM-sdk
 
-* Helpful Links
+* Helpful APIs using Default NIS: 23.228.67.85
 
 http://23.228.67.85:7890/account/get?address=WALLET_ADDRESS
 http://23.228.67.85:7890/account/unconfirmedTransactions?address=WALLET_ADDRESS
