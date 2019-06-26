@@ -3,7 +3,7 @@ $(document).ready(function () {
 	// Load nem-browser library
 	var nem = require("nem-sdk").default;
 
-    // Create an NIS endpoint object
+    	// Create an NIS endpoint object
 	var endpoint = nem.model.objects.create("endpoint")(nem.model.nodes.defaultTestnet, nem.model.nodes.defaultPort);
 
 	// Get an empty un-prepared transfer transaction object
@@ -26,7 +26,8 @@ $(document).ready(function () {
 		transactionEntity.parent = null;
 		if($("#parentname").val().length >= 1)
 		{
-			transactionEntity.parent = $("#parentname").val()
+			transactionEntity.parent = $("#parentname").val();
+			transactionEntity.rentalFee = 10000000;
 		}
 		console.log(transactionEntity);
 
@@ -71,6 +72,7 @@ $(document).ready(function () {
 		if($("#parentname").val().length >= 1)
 		{
 			transactionEntity.parent = $("#parentname").val();
+			transactionEntity.rentalFee = 10000000;
 		}
 	
 		nem.com.requests.chain.time(endpoint).then(function (timeStamp) {
