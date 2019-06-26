@@ -1,7 +1,3 @@
-//import the nem-sdk
-// This is not needed if you use the repl.js script available in the container
-var nem = require("nem-sdk").default;
-
 $(document).ready(function () {
 
 
