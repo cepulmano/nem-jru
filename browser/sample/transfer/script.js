@@ -1,6 +1,3 @@
-// Load nem-browser library
-var nem = require("nem-sdk").default;
-
 $(document).ready(function () {
 
 	/**
