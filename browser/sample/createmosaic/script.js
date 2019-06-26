@@ -1,6 +1,3 @@
-// Include the library
-var nem = require("nem-sdk").default;
-
 $(document).ready(function () {
 
 	function create() {
