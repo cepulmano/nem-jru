@@ -1,3 +1,6 @@
+* NEM Testnet XEM Faucet
+
+http://testfaucet.nem.ph/
 
 * NEM API Documentation
 
