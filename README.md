@@ -2,6 +2,9 @@
 
 http://testfaucet.nem.ph/
 
+* NEM Testnet XEM Faucet 2
+https://testnet.help/en/nemfaucet
+
 * NEM API Documentation
 
 https://nemproject.github.io/
