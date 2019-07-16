@@ -3,7 +3,12 @@
 http://testfaucet.nem.ph/
 
 * NEM Testnet XEM Faucet 2
+
 https://testnet.help/en/nemfaucet
+
+* NEM Testnet Explorer
+
+http://testnet-explorer.nemtool.com/#/
 
 * NEM API Documentation
 
