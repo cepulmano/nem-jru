@@ -6,6 +6,9 @@ $(document).ready(function () {
 	// Create an NIS endpoint object
 	var endpoint = nem.model.objects.create("endpoint")(nem.model.nodes.defaultTestnet, nem.model.nodes.defaultPort);
 
+	// Get a MosaicDefinitionCreationTransaction object
+	var tx = nem.model.objects.get("mosaicDefinitionTransaction");
+	
 	// Create a common object holding key 
 	var common = nem.model.objects.create("common")("");
 
@@ -18,9 +21,6 @@ $(document).ready(function () {
 		// Check private key for errors
 		if (common.privateKey.length !== 64 && common.privateKey.length !== 66) return alert('Invalid private key, length must be 64 or 66 characters !');
     	if (!nem.utils.helpers.isHexadecimal(common.privateKey)) return alert('Private key must be hexadecimal only !');
-		
-		// Get a MosaicDefinitionCreationTransaction object
-		var tx = nem.model.objects.get("mosaicDefinitionTransaction");
 
 		// Define the mosaic
 		tx.mosaicName = $("#mosaicname").val();
