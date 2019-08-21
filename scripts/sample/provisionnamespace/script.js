@@ -27,7 +27,6 @@ $(document).ready(function () {
 		if($("#parentname").val().length >= 1)
 		{
 			transactionEntity.parent = $("#parentname").val();
-			transactionEntity.rentalFee = 10000000;
 		}
 		console.log(transactionEntity);
 
@@ -72,7 +71,6 @@ $(document).ready(function () {
 		if($("#parentname").val().length >= 1)
 		{
 			transactionEntity.parent = $("#parentname").val();
-			transactionEntity.rentalFee = 10000000;
 		}
 	
 		nem.com.requests.chain.time(endpoint).then(function (timeStamp) {
